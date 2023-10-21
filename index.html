@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator Application</title>
+</head>
+
+    <input type="number" id="first" placeholder="enter 1st Number"/>
+    <input type="number" id="second" placeholder="enter 2nd Number"/>
+    <br/><br/>
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>git pull --rebase origin main
+
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+</body>
+</html>
+
+<script>
+    function add(){
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        alert(Number(x) + Number(y));
+    }
+
+    function subtract(){
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        alert(Number(x) - Number(y));
+    }
+
+    function multiply(){
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        alert(Number(x) * Number(y));
+    }
+
+    function divide(){
+        var x = document.getElementById("first").value;
+        var y = document.getElementById("second").value;
+        alert(Number(x) / Number(y));
+    }
+</script>
